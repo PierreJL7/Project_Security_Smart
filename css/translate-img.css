@@ -1,0 +1,91 @@
+.imagen,.imagen-2,.imagen-3,.imagen-4,.imagen-5,.imagen-6,.imagen-7,.imagen-8 {
+    width: 320px;
+    height: 560px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease, transform 2s ease;
+    border-radius: 10%;
+  }
+
+ .imagen{
+    background-image: url('../images/img-galerias/Ambientes-Personalizados/cerradura-inteligente-explicacion.jpeg');
+ } 
+
+ .imagen-2{
+    background-image: url('../images/img-galerias/Ambientes-Personalizados/iluminacion-inteligente-explicacion.jpg');
+ }
+
+ .imagen-3{
+    background-image: url('../images/img-galerias/Ambientes-Personalizados/cortina-inteligente-explicacion.jpg');
+ }
+
+ .imagen-4{
+    background-image: url('../images/img-galerias/Ambientes-Personalizados/SMART-LIFE-EXPLICACION.jpg');
+ }
+
+ .imagen-5{
+    background-image: url('../images/img-galerias/Ambientes-Personalizados/tranquilidad.jpg');
+ }
+
+ .imagen-6{
+  background-image: url('../images/img-galerias/Seguridad-Inteligente/videovigilancia.jpg');
+ }
+
+ .imagen-7{
+  background-image: url('../images/img-galerias/Seguridad-Inteligente/QUE-SON-SISTEMAS.jpg');
+ }
+
+ .imagen-8{
+  background-image: url('../images/img-galerias/Seguridad-Inteligente/que-son-dispositivos.png');
+ }
+
+
+
+  
+  .aparecer {
+    opacity: 1;
+    transform: translateX(-10%);
+  }
+
+  .aparecer-2{
+    opacity: 1;
+    transform: translateX(10%);
+  }
+
+  .aparecer-3{
+    opacity: 1;
+    transform: translateX(-10%);
+  }
+
+  .aparecer-4{
+    opacity: 1;
+    transform: translateX(10%);
+  }
+
+  .aparecer-5{
+    opacity: 1;
+    transform: translateX(-10%);
+  }
+  .aparecer-6 {
+    opacity: 1;
+    transform: translateX(-10%);
+  }
+
+  .aparecer-7{
+    opacity: 1;
+    transform: translateX(10%);
+  }
+
+  .aparecer-8{
+    opacity: 1;
+    transform: translateX(-10%);
+  }
+
+/*RESPONSIVE BANNER*/
+@media screen and (max-width: 480px) {
+  .aparecer-6,.aparecer,.aparecer-2,.aparecer-3,.aparecer-4,.aparecer-5,.aparecer-7,.aparecer-8 {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

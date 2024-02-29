@@ -1,0 +1,138 @@
+.h1-fondo,.fondo-jardin,.cocina-fondo-titulo {
+  position: relative; /* Establece la posición relativa */
+  height: 80px; /* Altura del encabezado */
+  line-height: 80px; /* Alinea verticalmente el texto */
+  color: white; /* Color del texto */
+  transition: background-color 0.3s ease;
+}
+
+.h1-fondo::before {
+  content: "";
+  position: absolute; /* Establece la posición absoluta con respecto al encabezado */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/736x/dc/c3/92/dcc392e077fa1e3915cdc4584b94f4b2.jpg'); /* Ruta de la imagen */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* Ajusta la opacidad según lo necesites */
+  z-index: -1; /* Asegura que la imagen de fondo esté detrás del texto */
+}
+
+.h1-fondo:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*FONDO DE TITULO JARDIN*/
+.fondo-jardin::before{
+  content: "";
+  position: absolute; /* Establece la posición absoluta con respecto al encabezado */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/471/995/small/the-artificial-green-grass-pattern-texture-background-photo.jpg'); /* Ruta de la imagen */
+  background-size: cover;
+  background-position: center;
+  opacity: 1.2; /* Ajusta la opacidad según lo necesites */
+  z-index: -1; /* Asegura que la imagen de fondo esté detrás del texto */
+}
+
+.fondo-jardin:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*FONDO DE TITULO DE COCINA SMART*/
+.cocina-fondo-titulo::before{
+  content: "";
+  position: absolute; /* Establece la posición absoluta con respecto al encabezado */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.freepik.com/foto-gratis/pared-gris-texturizada_53876-88964.jpg'); /* Ruta de la imagen */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* Ajusta la opacidad según lo necesites */
+  z-index: -1; /* Asegura que la imagen de fondo esté detrás del texto */
+}
+
+.cocina-fondo-titulo:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.parrafo-chico{
+  font-size: 13.3px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent; /* Color de fondo inicialmente transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Agrega una transición suave al cambio de color de fondo */
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente al hacer hover */
+}
+
+.overlay .card-body {
+  z-index: 1; /* Asegura que el texto esté encima de la imagen */
+}
+
+/*CARDS DE NUESTROS MEJORES PRODUCTOS*/
+
+.gallery_img-edit {
+  position: relative;
+}
+
+.overlay-edit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Color de fondo del recuadro */
+  opacity: 0; /* Por defecto, el recuadro no es visible */
+  transition: opacity 0.3s ease; /* Transición suave */
+  display: flex; /* Utilizamos flexbox para centrar los elementos vertical y horizontalmente */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Alinea los elementos en columna */
+}
+
+.overlay-edit h3 {
+  color: white; /* Color del texto */
+  text-align: center; /* Centrar el texto horizontalmente */
+  position: relative; /* Asegura que el z-index funcione correctamente */
+  z-index: 2; /* Valor de z-index más alto */
+}
+
+.overlay-edit span {
+  color: white; /* Color del texto */
+  text-align: center; /* Centrar el texto horizontalmente */
+  position: relative; /* Asegura que el z-index funcione correctamente */
+  z-index: 1; /* Valor de z-index más bajo */
+}
+
+.gallery_img-edit:hover .overlay-edit {
+  opacity: 1; /* Mostrar el recuadro al pasar el cursor */
+}
+
+.container-soluciones{
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-soluciones{
+    display: block;
+  }
+  
+}

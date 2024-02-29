@@ -1,0 +1,14 @@
+.imagen {
+    width: 320px;
+    height: 560px;
+    background-image: url('../images/img-galerias/Ambientes-Personalizados/iluminacion-inteligente-explicacion.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .aparecer {
+    opacity: 1;
+    transform: translateX(15%);
+  }

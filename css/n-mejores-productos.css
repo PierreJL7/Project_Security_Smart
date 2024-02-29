@@ -1,0 +1,103 @@
+.banner-edit {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-edit img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo opaco */
+}
+
+.content {
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 60%; /* Ancho del contenido para pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%; /* Ancho del contenido para pantallas medianas y pequeñas */
+        left: 5px; /* Ajuste del margen izquierdo para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 468px) {
+    .content {
+        padding: 1em;
+        letter-spacing: -0.5px;
+    }
+
+    .h2-titulo {
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+
+    .p-descripcion {
+        font-size: 14px;
+        margin-bottom: 10px;
+        letter-spacing: -1.2px;
+    }
+
+    .titulo-explicacion{
+        font-size: 20px;
+    }
+
+
+}
+
+
+/* PRESENTACION DE LAS CERRADURAS */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 250px; 
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.card-content {
+    padding: 15px; 
+}
+
+.card-title {
+    font-size: 18px; 
+    margin-bottom: 5px; 
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px; 
+}
+
+.btn-buy {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.btn-buy:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,91 @@
+.h1-fondo {
+  position: relative; /* Establece la posición relativa */
+  height: 80px; /* Altura del encabezado */
+  line-height: 80px; /* Alinea verticalmente el texto */
+  color: white; /* Color del texto */
+  transition: background-color 0.3s ease;
+  
+}
+
+.h1-fondo::before {
+  content: "";
+  position: absolute; /* Establece la posición absoluta con respecto al encabezado */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/736x/dc/c3/92/dcc392e077fa1e3915cdc4584b94f4b2.jpg'); /* Ruta de la imagen */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6; /* Ajusta la opacidad según lo necesites */
+  z-index: -1; /* Asegura que la imagen de fondo esté detrás del texto */
+}
+
+.h1-fondo:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.container-galeria{
+  display: flex;
+}
+
+.descrpcion-galeria{
+  width: 40%;
+}
+
+.galeria-block{
+  margin: auto;
+}
+
+.titulo-principal{
+  width: 80%;
+}
+
+#galeria {
+    width: 400px;
+  }
+
+  .text-reduce{
+    font-size: 13.8px;
+  }
+  
+  .ul-galeria {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+  }
+  
+.img-galeria{
+    width: 100px;
+    opacity: 50%;
+    transition: 0.3s;
+    filter: grayscale(50%);
+  }
+  
+.img-galeria:hover {
+    opacity: 100%;
+    margin-top: -5px;
+    filter: grayscale(0%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  }
+.img-galeria:active{
+    transform: scale(0.8);
+  }
+
+  @media screen and (max-width: 850px) {
+    .container-galeria{
+      display: block;
+     
+    }
+
+    .descrpcion-galeria{
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .galeria-block{
+      margin: auto;
+    }
+}
